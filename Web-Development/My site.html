@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameDev</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            background-image: url(image1.jpg);
+            background-size: 100%;
+            font-family: 'Baloo Bhai 2', cursive;
+            /* background-repeat: no-repeat; */
+            /* position: fixed; */
+        }
+
+        /* /////////////////   H E A D E R   ///////////////////////// */
+        .left {
+            position: absolute;
+            left: 35px;
+            top: 15px;
+            display: inline-block;
+            /* border: 2px solid red; */
+            color: #ad7d3d;
+            font-size: 35px;
+            font-family: 'Baloo Bhai 2', cursive;
+
+        }
+
+        /* ////////////////////////////////////////////////////////////////// */
+        .mid {
+            display: block;
+            width: 50%;
+            margin: 20px auto;
+            /* border: 2px solid rgb(255, 197, 7); */
+            background-color: rgba(250, 248, 228, 0.664);
+            font-family: 'Baloo Bhai 2', cursive;
+            border-radius: 17px;
+        }
+
+        .navbar {
+            box-sizing: border-box;
+            padding: 10px;
+            display: inline-block;
+            width: 100%;
+            margin: auto auto;
+            text-align: center;
+        }
+
+        .navbar li {
+            display: inline-block;
+
+        }
+
+        .navbar li a {
+            color: #ad7d3d;
+            /* color: #e9ad03; */
+            text-decoration: none;
+            padding: 35px 25px;
+        }
+
+        .navbar li a:hover,
+        .navbar li a.active {
+            color: #e9ad03;
+            /* color: #ad7d3d; */
+        }
+
+        /* ////////////////////////////////////////////////////////////////// */
+        .right {
+            position: absolute;
+            right: 35px;
+            top: 23px;
+            display: inline-block;
+            /* border: 2px solid rgb(0, 153, 255); */
+        }
+
+        .right .btn {
+            box-sizing: border-box;
+            border: none;
+            padding: 5px 20px;
+            color: #ad7d3d;
+            background-color: rgba(250, 248, 228, 0.664);
+            font-size: 18px;
+            font-family: 'Baloo Bhai 2', cursive;
+            border-radius: 15px;
+            cursor: pointer;
+            margin: 1px 5px;
+
+        }
+
+        .right .btn:hover {
+            color: #ffffff;
+            background-color: #e9ad03;
+
+        }
+
+        /* /////////////////   L A N D - B O X  /////////////////////////  */
+        .landingbox {
+            /* border: 2px solid greenyellow; */
+            margin: 40px auto;
+            /* padding: 30px 30px; */
+            border-radius: 15px;
+            background-color: rgba(250, 248, 228, 0.384);
+            width: 90%;
+            height: 490px;
+            margin-bottom: 180px;
+        }
+
+        /* .landingbox #profile {
+            float: right;
+            border: 5px solid #e9ad03;
+            height: 400px;
+            width: 400px;
+            border-radius: 1000px;
+            background-image: url(profile.jpg);
+            background-position: center;
+            background-size: auto 110%;
+        } */
+        .landingbox #profile {
+            border: 1px solid #222120;
+            height: 100%;
+            margin: 0px;
+            text-align: center;
+            /* width: 400px; */
+        }
+
+        .landingbox #profile img {
+
+            /* border: 1px solid red; */
+            display: inline-block;
+            /* width: 300px; */
+            height: 100%;
+            /* margin: 10px auto; */
+
+        }
+
+        #profile .info {
+            /* border: 2px solid green; */
+            width: 28%;
+            padding: 30px;
+            height: 400px;
+            margin-top: 40px;
+            font-size: 25px;
+            font-family: oswald;
+            color: #ad7c3da4;
+        }
+
+        #profile .info ul {
+            list-style-type: none;
+            margin-left: 0px;
+            padding-left: 0px;
+            color: white;
+        }
+
+        #profile #left {
+            float: left;
+        }
+
+        #profile #right {
+            float: right;
+        }
+
+        /* /////////////////   S I D E - B A R   /////////////////////////  */
+        .sidebar {
+            /* border: 2px solid #f7c98e; */
+            background-color: rgba(250, 248, 228, 0.664);
+            width: 250px;
+            height: 400px;
+            padding: 30px 30px;
+            margin: 30px 30px;
+            float: right;
+            border-radius: 15px;
+        }
+
+        .sidebar h2 {
+            margin-top: 0px;
+            color: #ad7d3d;
+
+        }
+
+        /* /////////////////   A R T I C L E   ///////////////////////// */
+        .article {
+            /* border: 2px solid rgba(255, 255, 255, 0.747); */
+            background-color: rgba(250, 248, 228, 0.664);
+            width: 850px;
+            height: auto;
+            padding: 30px 30px;
+            margin: 30px 30px;
+            float: left;
+            border-radius: 15px;
+        }
+
+        .article h2 {
+            margin-top: 0px;
+            margin-left: 20px;
+            color: #ad7d3d;
+
+        }
+
+        .article .post_container {
+            /* border: 2px solid black; */
+            overflow: hidden;
+            height: 360px;
+        }
+
+        .article .post_container img {
+            width: 500px;
+            border-radius: 15px;
+            float: left;
+            margin-left: 10px;
+        }
+
+        .article .post_container p {
+            /* border: 2px solid red; */
+            padding: 20px 10px;
+            width: 300px;
+            margin-top: 0px;
+            border-radius: 15px;
+            float: left;
+            margin-left: 10px;
+            font-size: 16px;
+        }
+
+        .article .loadmore {
+            display: block;
+            text-align: center;
+            margin-bottom: 3px;
+            color: #ad7d3d;
+            cursor: pointer;
+            font-size: larger;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- /////////////////   H E A D E R   ///////////////////////// -->
+    <header class="header">
+        <div class="left">Kinjo Dzn</div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Games</a></li>
+                <li><a href="#">About us</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <button class="btn">Post</button>
+            <button class="btn">Store</button>
+        </div>
+    </header>
+
+    <!-- //////////////   L A N D - B O X   ///////////////////////// -->
+    <div class="landingbox">
+        <div id="profile">
+            <div class="info" id="left">
+                <h1>
+                    Developer
+                </h1>
+                <!-- <p>
+                    Unity | Vscode | C++ | c# | Html | Css | Java Script | Mysql
+                </p> -->
+
+                <ul>
+                    <li>Unity</li>
+                    <li>Blender</li>
+                    <li>C++ / C#</li>
+
+                    <li>Mysql</li>
+                </ul>
+            </div>
+            <img src="MyPIc2.png" alt="profile">
+            <div class="info" id="right">
+                <h1>
+                    Designer
+                </h1>
+                <p>
+                <Ul>
+                    <li>Ui/Ux </li>
+                    <li>Social media </li>
+                    <li>Photoshop </li>
+                    <li>Lightroom </li>
+                </Ul>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- /////////////////   A R T I C L E   ///////////////////////// -->
+    <div class="article">
+        <Div class="post_container">
+            <h2>Top 10 Arcade Games</h2>
+            <img src="gameImage.jpg" alt="">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Id cum neque culpa dicta recusandae, ab amet
+                praesentium quod enim veniam consequatur reiciendis ea. Recusandae repudiandae ut architecto, nam itaque
+                obcaecati eveniet dolores alias odit illo fuga eaque ad unde eos velit aperiam explicabo excepturi
+                quisquam tempore adipisci cum dicta! Maiores....
+                <a href="#">
+                    Read More
+                </a>
+            </p>
+        </div>
+        <Div class="post_container">
+            <h2>Pubg hidden secret</h2>
+            <img src="gameImage.jpg" alt="">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Id cum neque culpa dicta recusandae, ab amet
+                praesentium quod enim veniam consequatur reiciendis ea.
+                obcaecati eveniet dolores alias odit illo fuga eaque ad unde eos velit aperiam explicabo excepturi
+                quisquam tempore adipisci cum dicta! Maiores....
+                <a href="#">
+                    Read More
+                </a>
+            </p>
+        </div>
+        <Div class="post_container">
+            <h2>Pubg New Update (2023)</h2>
+            <img src="gameImage.jpg" alt="">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Id cum neque culpa dicta recusandae, ab amet
+                praesentium quod enim veniam consequatur reiciendis ea.
+                quisquam tempore adipisci cum dicta! Maiores....
+                <a href="#">
+                    Read More
+                </a>
+            </p>
+        </div>
+        <a class="loadmore">
+            Load More
+        </a>
+    </Div>
+
+    <!-- /////////////////   S I D E - B A R   ///////////////////////// -->
+    <div class="sidebar">
+        <h2>New</h2>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Form page</title>
+</head>
+
+<body>
+
+    <h1>Table </h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Surname</th>
+                <th>Role</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>001</td>
+                <td>Purvesh</td>
+                <td>Choudhary</td>
+                <td>Developer</td>
+            </tr>
+            <tr>
+                <td>002</td>
+                <td>Pooja</td>
+                <td>Choudhary</td>
+                <td>Artist</td>
+            </tr>
+            <tr>
+                <td>003</td>
+                <td>Raviraj</td>
+                <td>Choudhary</td>
+                <td>Angular</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h1>Form</h1>
+    <form>
+        <div>
+            <label for="Name">Name : </label>
+            <input type="text" name="name" id="Name">
+        </div>
+        <div>
+            Email : <input type="email" name="email">
+        </div>
+        <div>
+            <label for="Role">Role : </label>
+            <select name="role" id="Role">
+                <option value="Fronted">Fronted</option>
+                <option value="Backend">Backend</option>
+                <option value="Database">Database</option>
+                <option value="Devops">Devops</option>
+            </select>
+        </div>
+        <div>
+            Experience (in years) : <input type="number" name="exp" value="0">
+        </div>
+        <div>
+            Gender : Male <input type="radio" name="gender">
+            Female <input type="radio" name="gender">
+            Other <input type="radio" name="gender">
+        </div>
+        <div>
+            Any question ? <br>
+            <textarea name="anyquestion?" cols="30" rows="4"></textarea>
+        </div>
+        <div>
+            Do you accept our terms and conditions ?
+            <input type="checkbox" name="termsandcondition" checked>
+        </div>
+        <div>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </div>
+    </form>
+
+</body>
+
+</html>
